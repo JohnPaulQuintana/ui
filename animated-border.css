@@ -3,16 +3,40 @@ body {
   background-color: #000;
   color: white;
 }
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
+h1, h2, h3, h4, h5, h6, .sub-title {
+  /* font-family: 'Montserrat', sans-serif;
+  font-weight: 700; */
+  font-family: "Anton", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+p, a, button, span{
+  font-family: 'Archivo', sans-serif;
+  font-weight: 500;
+  /* font-style: normal; */
 }
 .carbon-bg {
   background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2IiBoZWlnaHQ9IjYiPgo8cmVjdCB3aWR0aD0iNiIgaGVpZ2h0PSI2IiBmaWxsPSIjMDAwMDAwIj48L3JlY3Q+CjxwYXRoIGQ9Ik0wIDBMNiA2IiBzdHJva2U9IiMxMDEwMTAiIHN0cm9rZS13aWR0aD0iMSI+PC9wYXRoPgo8cGF0aCBkPSJNNiAwTDAgNiIgc3Ryb2tlPSIjMTAxMDEwIiBzdHJva2Utd2lkdGg9IjEiPjwvcGF0aD4KPC9zdmc+');
 }
 
 .hero-bg {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1597852074816-d933c7d2b988?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
+  /* background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://motionbgs.com/media/660/bmw-carros-driving.jpg'); */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://c4.wallpaperflare.com/wallpaper/91/304/14/bmw-red-coupe-front-wallpaper-preview.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+.section-bg {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://www.shutterstock.com/image-illustration/minimalist-dark-abstract-interior-design-600nw-2479378187.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.about-bg {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://w0.peakpx.com/wallpaper/382/464/HD-wallpaper-street-riders-sportscar-garage-video-game-design-racing-car-gaming-xbox-dark-ferrari-car-digital-mercedes-yellow-car-night-style.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -39,9 +63,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .text-stroke-animated {
   font-weight: bold;
-  -webkit-text-stroke: 1px transparent;
-  color: transparent;
-  animation: stroke-fill-fade 6s ease-in-out infinite;
+  color: #E10600;
 }
 
 @keyframes pulse-scale {
@@ -107,5 +129,303 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
+/* hero section */
+.hero h1{
+  font-size: 4em;
+}
 
+/* mobile */
+@media (min-width:320px) {
+  header div a{
+    font-size: 0.8em;
+    padding: 7px;
+  }
 
+  .hero h1{
+    font-size: 1.5em;
+  }
+  .hero .cta{
+    color: white;
+    font-size: 0.9em;
+    padding: 10px;
+  }
+
+   /* results */
+   .result-con .card .card-btn{
+    position:unset;
+    width: 100%;
+    padding: 0;
+
+   }
+   .result-con .card button{
+    font-size: 0.8em;
+  }
+
+  /* our winning formula */
+  .winning-con .svg-con{
+    width: 35%;
+    height: 9dvh;
+  }
+
+  .winning-con .svg-con svg{
+    width: 50%;
+    height: 100%;
+  }
+  
+}
+
+/* larger device */
+@media (min-width: 1440px) {
+  .hero h1{
+    font-size: 3.5em;
+  }
+  
+  .hero .video-con{
+    height: 80dvh;
+  }
+
+  /* .result-con .card{
+    width: 100%;
+    height: 75dvh;
+    padding: 5dvh 5dvh;
+  }
+  .result-con .card img{
+    width: 50%;
+  } */
+  
+  /* results */
+  .result-con{
+    padding: 10vh 30vh;
+  }
+  /* .result-con .title{
+    font-size: 3em;
+  } */
+  .result-con .mySwiper{
+    gap: 100px;
+  }
+  .result-con .card{
+    width: 100%;
+    height: 80dvh;
+    padding: 5dvh 5dvh;
+  }
+  .result-con .card img{
+    width: 50%;
+  }
+
+  .result-con .card .stats{
+    /* border: 1px solid #E10600; */
+    height: 31dvh;
+  }
+
+  .result-con .card h1{
+    font-size: 1.8em;
+    margin-bottom: 5px;
+  }
+  .result-con .card p{
+    font-size: 1.2em;
+    margin-bottom: 5px;
+  }
+
+  .result-con .card .stars span{
+    font-size: 1.5em;
+  }
+  .result-con .card button{
+    font-size: 1.5em;
+  }
+  .result-con .swiper-button-next{
+    padding-right: 20vh;
+  }
+  .result-con .swiper-button-prev{
+    padding-left: 20vh;
+  }
+}
+
+@media (min-width: 1480px) {
+  
+  /* header */
+  header{
+    padding: 2vh 35vh 2vh 35vh;
+  }
+
+  header img{
+    width: 10%;
+  }
+  header div a{
+    color: white;
+    font-size: 2em;
+    padding: 20px;
+  }
+
+  /* hero */
+  .hero{
+    padding: 15vh 30vh;
+  }
+  .hero h1{
+    font-size: 5.5em;
+  }
+  .hero h1 .sub-title{
+    font-size: 1.5em;
+  }
+  .hero p{
+    font-size: 4em;
+  }
+  .hero .video-con{
+    height: 80dvh;
+  }
+  .hero .video-con div svg{
+    width: 10%;
+  }
+  .hero .cta{
+    color: white;
+    font-size: 2em;
+    padding: 20px;
+    margin-top: 2vh;
+  }
+
+  /* results */
+  .result-con{
+    padding: 10vh 30vh;
+  }
+  .result-con .title{
+    font-size: 5em;
+  }
+  .result-con .mySwiper{
+    gap: 100px;
+  }
+  .result-con .card{
+    width: 100%;
+    height: 75dvh;
+    padding: 5dvh 5dvh;
+  }
+  .result-con .card img{
+    width: 50%;
+    margin-bottom: 20px;
+  }
+
+  .result-con .card .stats{
+    /* border: 1px solid #E10600; */
+    height: 32dvh;
+  }
+
+  .result-con .card h1{
+    font-size: 3.1em;
+    margin-bottom: 20px;
+  }
+  .result-con .card p{
+    font-size: 2.3em;
+  }
+
+  .result-con .card .stars span{
+    font-size: 2.3em;
+  }
+  .result-con .card button{
+    font-size: 2.3em;
+  }
+  .result-con .swiper-button-next{
+    padding-right: 20vh;
+  }
+  .result-con .swiper-button-prev{
+    padding-left: 20vh;
+  }
+
+  /* Winning con */
+  /* results */
+  .winning-con{
+    padding: 10vh 30vh;
+  }
+  .winning-con .title{
+    font-size: 5em;
+  }
+  .winning-con .svg-con{
+    width: 35%;
+    height: 10dvh;
+  }
+  .winning-con .svg-con svg{
+    width: 60%;
+    height: 100%;
+  }
+
+  .winning-con p:nth-child(1){
+    font-size: 2.5em;
+  }
+  .winning-con p:nth-child(2){
+    font-size: 2.1em;
+  }
+  .winning-con .card{
+    padding: 2vh;
+  }
+
+  /* core service */
+  .core-service-con{
+    padding: 10vh 20vh;
+  }
+  .core-service-con .title{
+    font-size: 5em;
+  }
+  .core-service-con .logo{
+    width: 10%;
+    height: 10dvh;
+  }
+  .core-service-con .logo i{
+    font-size: 6em;
+  }
+  .core-service-con p{
+    font-size: 2.5em;
+  }
+
+  /* about */
+  .about-con{
+    padding: 10vh 30vh;
+  }
+  .about-con .profile{
+    width: 70%;
+    height: auto;
+    height: 32dvh;
+  }
+  .about-con h2{
+    font-size: 5em;
+  }
+  .about-con p{
+    font-size: 2.8em;
+  }
+
+  /* faqs */
+  .faqs-con{
+    padding: 10vh 30vh;
+  }
+  .faqs-con .title{
+    font-size: 5em;
+  }
+
+  .faqs-con p, .faqs-con button{
+    font-size: 2.8em;
+  }
+  .faqs-con button span{
+    font-size: 1.8em;
+  }
+
+  /* footer */
+  .footer-con{
+    padding: 10vh 30vh;
+  }
+  .footer-con h1{
+    font-size: 5em;
+  }
+  .footer-con h3{
+    font-size: 3em;
+  }
+  .target-p{
+    font-size: 2.8em !important;
+  }
+  .footer-con p{
+    font-size: 2.8em;
+  }
+  .footer-con a{
+    text-decoration: none;
+    font-size: 2em;
+    padding: 20px;
+  }
+  .footer-con img{
+    width: 60%;
+  }
+}
